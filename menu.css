@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro');
+
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family:'Source Sans Pro', helvetica, arial, sans-serif;
+}
+html, body{
+    background-color:#258EAB ;
+    
+}
+h1{
+    font-size: 6.854rem;
+    /* ADD the Google serif font to this font stack */
+    font-family:'Lora', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+    padding: 1rem 2rem;
+}
+h2{
+    font-size: 4.23rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: 'Lora','Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    padding: 1rem 2rem;
+}
+nav li{
+    font-size: 2.618rem;
+}
+p{
+    font-size: 1.618rem;
+    padding: 1rem 2rem;
+}
+.wrapper{
+    max-width: 1400px; 
+    width: 80%;
+    margin: 0 auto;
+    background-color: #92E3F7;
+    color: #395A9F;
+}
+header{
+    border-bottom: 0.8rem solid #A0A3AB ;
+    background-color: #7EA2F7;
+    color: #4620E2;
+}
+/**********************change fonts, colour etc in css above*************************/
+
+
+
+
+
+
+/**********************Horizontal menu*************************/
+.menu-h{
+    width: 100%;
+}
+    .menu-h li{
+        /* style the list items to remove the bullets 
+        and line up horizontally
+        and take up 20% of the width of the ul */
+        list-style: none;
+        float:left;
+        width:20%;
+        
+        
+        
+        text-align: center;
+        line-height: 1.5;
+        border-bottom: 0.25rem solid #681596;
+        
+    }
+
+
+
+        .menu-h a,
+        .menu-h a:link,
+        .menu-h a:visited{
+            /* style the anchors to fill the entire width of the li 
+            make sure there is padding around your text */
+            display:block;
+                
+            cursor:pointed;
+                text-decoration:none;
+                color:#498286;
+        }
+
+
+
+
+        .menu-h a:hover,
+        .menu-h a:active{
+            color: #4E7071;
+            font-variant: small-caps;
+            background-color: #8BF8FF;
+            
+         /* do not create any movement in the page after applying hover effects*/   
+            
+        }
+
+
+
+
+
+
+
+
+/**********************Vertical menu*************************/
+
+
+.menu-v{
+    width: 20%;
+    float:left;
+}
+
+
+
+
+    .menu-v li{
+        /* style the list items to remove the bullets 
+        and line up vertically
+        and take up 100% of the width of the ul */
+        display:block;
+        list-style: none;
+        width:100%;
+        border-bottom: :1px solid #507CFF;
+        
+        text-align: center;
+        line-height: 1.2;
+        border: 0.25rem solid #71A2A4;
+        margin-top: 25px;
+    }
+
+
+
+
+
+.menu-v a,
+        .menu-v a:link,
+        .menu-v a:visited{
+            /* style the anchors to fill the entire width of the li */
+            display:block;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            color:#681596;
+        }
+
+
+
+
+
+        .menu-v a:hover,
+        .menu-v a:active{
+            color: #852CA4;
+            font-variant: normal;
+            background-color: #AA92B2;
+        }
+
+
+
+
+
+
+main{
+    width:80%;
+    float: right;
+}
+footer{
+    clear:both;
+}
